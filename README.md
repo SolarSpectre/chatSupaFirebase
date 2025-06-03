@@ -82,10 +82,12 @@ Una aplicación de chat en tiempo real construida con Angular, Ionic y Supabase.
 ### Perfiles
 - Lectura pública
 - Los usuarios solo pueden insertar/actualizar su propio perfil
+![imagen](https://github.com/user-attachments/assets/385bebaa-03af-4dc3-b96f-8148493233d1)
 
 ### Mensajes
 - Lectura pública
 - Los usuarios solo pueden insertar sus propios mensajes
+![imagen](https://github.com/user-attachments/assets/aa461cdc-dd2f-4867-afbc-5dc9fdc93f79)
 
 ### Almacenamiento
 - Los avatares son accesibles públicamente
@@ -101,6 +103,7 @@ Una aplicación de chat en tiempo real construida con Angular, Ionic y Supabase.
 - Compartir datos curiosos
 - Indicadores de usuario
 - Avatares de perfil
+![imagen](https://github.com/user-attachments/assets/884f7d93-e969-4c6f-b677-a6397e83a50d)
 
 ### Perfiles
 - Avatar personalizable
