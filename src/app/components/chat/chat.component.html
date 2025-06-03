@@ -1,0 +1,36 @@
+<div class="chat-container">
+  <div class="messages-container" #scrollContainer>
+    <div *ngFor="let message of messages" 
+         [ngClass]="{'message': true, 'message-own': isCurrentUser(message), 'message-other': !isCurrentUser(message)}">
+      <div class="message-header">
+        <span class="user-email">{{ message.user_email }}</span>
+        <span class="message-time">{{ message.created_at | date:'short' }}</span>
+      </div>
+      <div class="message-content">
+        <ng-container *ngIf="isImageMessage(message.content); else textContent">
+          <img [src]="getImageUrl(message.content)" alt="Shared image" class="message-image">
+        </ng-container>
+        <ng-template #textContent>
+          {{ message.content }}
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+  <div class="input-container">
+    <app-clip-menu
+      (locationSelected)="handleLocation($event)"
+      (imageSelected)="handleImage($event)"
+      (factSelected)="handleFact($event)">
+    </app-clip-menu>
+    <ion-input
+      [(ngModel)]="newMessage"
+      placeholder="Escribe un mensaje..."
+      (keyup.enter)="sendMessage()"
+      class="message-input">
+    </ion-input>
+    <ion-button (click)="sendMessage()" [disabled]="!newMessage.trim()">
+      <ion-icon name="send"></ion-icon>
+    </ion-button>
+  </div>
+</div> 

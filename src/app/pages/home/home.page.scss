@@ -1,0 +1,37 @@
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+    --color: white;
+  }
+
+  ion-button {
+    --color: white;
+  }
+}
+
+ion-content {
+  --background: #f5f5f5;
+}
+
+.welcome-message {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+  
+  p {
+    margin: 0;
+    color: var(--ion-color-medium);
+    font-size: 0.9rem;
+  }
+}
+
+app-chat {
+  height: calc(100% - 48px);
+  display: block;
+  background: white;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

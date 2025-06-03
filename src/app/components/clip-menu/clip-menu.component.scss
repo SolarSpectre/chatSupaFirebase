@@ -1,0 +1,39 @@
+.clip-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-dropdown {
+  position: fixed;
+  bottom: 80px;
+  left: 16px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 1000;
+  min-width: 200px;
+
+  ion-button {
+    --padding-start: 12px;
+    --padding-end: 12px;
+    justify-content: flex-start;
+    height: 40px;
+    margin: 0;
+    font-size: 14px;
+    color: var(--ion-color-dark);
+    width: 100%;
+
+    ion-icon {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    &:hover {
+      --background: var(--ion-color-light-shade);
+    }
+  }
+} 
