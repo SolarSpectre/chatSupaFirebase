@@ -26,7 +26,7 @@ Una aplicación de chat en tiempo real construida con Angular, Ionic y Supabase.
     - Autenticación
     - Base de datos PostgreSQL
     - Almacenamiento de archivos
-    - Tiempo real con WebSockets
+    - Tiempo real con Firebase
 
 ## 📋 Requisitos Previos
 
